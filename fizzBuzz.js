@@ -20,4 +20,57 @@ function fizzBuzz(n){
     }
 }
 
-fizzBuzz(n);
+// fizzBuzz(n);
+
+var m = 24;
+function fizzBuzz(m){
+    if(m<0){
+        return false;
+    }
+    for(let i = 0; i < m; i++){
+        if(i % 5 === 0 && i % 3 === 0 ){
+            console.log("Fizz Buzz");
+        } 
+        if(i % 5 === 0){
+            console.log("Buzz");
+        }
+        if(i %3 === 0){
+            console.log("fizz");
+        }else{
+            console.log(i);
+        }
+    }
+}
+
+fizzBuzz(m);
+
+
+//for practice only:
+// var m = 24;
+// function fizzBuzz(m){
+//     if(m<0){
+//         return false;
+//     }
+//     var arr = [];
+//     for(var i = 0; i < m; i++){
+//         if(i % 5 === 0 && i % 3 === 0 ){
+//             // console.log("Fizz Buzz");
+//             // arr.push(i +", ");
+//         } 
+//         if(i % 5 === 0){
+//             // console.log("Buzz");
+//             // arr.push(i +", ");
+//         }
+//         if(i %3 === 0){
+//             // console.log("fizz");
+//             // arr.push(i +", ");
+//         }else{
+//             // console.log(i);
+//             arr.push(i +", ");
+//         }
+//     }
+//     console.log(arr);
+//     return arr;
+// }
+
+// fizzBuzz(m);d
